@@ -1,4 +1,4 @@
-import { forEach, fromEvent, map, filter, pipe } from "callbag-basics";
+import { forEach, fromEvent, filter, pipe } from "callbag-basics";
 
 const clickDeleteBranchButton = () => {
   const bttn = document.querySelector(".post-merge-message button");
