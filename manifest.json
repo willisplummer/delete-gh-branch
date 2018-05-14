@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github Branch Deleter Plugin",
+  "description": "This extension will close github branches after they are merged",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "dist/index.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
