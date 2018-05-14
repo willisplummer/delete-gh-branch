@@ -12,6 +12,6 @@ const clickDeleteBranchButton = () => {
 
 pipe(
   fromEvent(document, "click"),
-  filter(ev => ev.target.className.includes("js-merge-commit-button")),
+  filter(ev => ev.target.className && ev.target.className.includes("js-merge-commit-button")),
   forEach(ev => setTimeout(clickDeleteBranchButton, 200))
 );
